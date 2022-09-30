@@ -11,7 +11,7 @@ const accessToken = localStorage.getItem("token");
 const lang = localStorage.getItem('lang') || 'en';
 // axios.defaults.headers.common['Accept-Language'] = lang;
 export const axiosInstance = axios.create({
-  baseURL:"https://jumia-clone-apis.herokuapp.com/api/v1",
+  baseURL:"https://jumia-clone-apis.onrender.com/api/v1",
   headers: {
     authorization: `Bearer ${accessToken}`,
     'Accept-Language': `${lang}`
